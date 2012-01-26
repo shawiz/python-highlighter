@@ -7,9 +7,13 @@ For example, a search for `deep dish pizza` returns documents that match the que
 The Python Highlighter
 
 1. Highlighter all the words in the query;
-2. Are not necessarily the full document (they are instead only a relevant snippet);
-3. The given text is highlighted with [[HIGHLIGHT]]…[[ENDHIGHLIGHT]]
+2. Are not necessarily the full document. They are instead all connected sentences that contain the query;
+3. Matched queries are highlighted with `[[HIGHLIGHT]]...[[ENDHIGHLIGHT]]`
 
 Example:
 
-`highlight_doc("I like fish. Little star's deep dish pizza sure is fantastic. Dogs are funny.", "deep dish pizza") -> "Little star's [[HIGHLIGHT]]deep dish pizza[[ENDHIGHLIGHT]] sure is fantastic."`
+`highlight_doc("I like fish. Little star's deep dish pizza sure is fantastic. Dogs are funny.", "deep dish pizza")`
+
+yields
+
+`"Little star's [[HIGHLIGHT]]deep dish pizza[[ENDHIGHLIGHT]] sure is fantastic."`
