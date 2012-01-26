@@ -1,7 +1,7 @@
 Python Highlighter Function
 ===============================
 
-A python function that highlight document snippets that match a query. 
+Highlight document snippets that match a query. 
 For example, a search for `deep dish pizza` returns documents that match the query as well as highlights that try to show why the document is relevant. 
 
 The Python Highlighter
